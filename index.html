@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+
+    <body class="bg-gray-50 font-sans text-gray-800">
+
+  <!-- Sidebar: hidden on mobile, fixed and visible on lg+ -->
+  <aside class="fixed inset-y-0 left-0 hidden w-64 flex-col border-r border-gray-200 bg-white lg:flex">
+    <div class="flex h-16 items-center gap-2 px-6 text-xl font-bold text-brand-600">
+      <span aria-hidden="true">💳</span> PayWave
+    </div>
+    <nav class="flex-1 space-y-1 px-3 py-4" aria-label="Main">
+      <a href="#" class="flex items-center gap-3 rounded-lg bg-brand-50 px-3 py-2 font-medium text-brand-700">
+        <span aria-hidden="true">🏠</span> Dashboard
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 transition hover:bg-gray-100">
+        <span aria-hidden="true">👥</span> Users
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 transition hover:bg-gray-100">
+        <span aria-hidden="true">🧾</span> Orders
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 transition hover:bg-gray-100">
+        <span aria-hidden="true">📊</span> Reports
+      </a>
+      <a href="#" class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-600 transition hover:bg-gray-100">
+        <span aria-hidden="true">⚙️</span> Settings
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main area: pushed right by the sidebar width on lg+ -->
+  <div class="lg:pl-64">
+
+    <!-- Top bar -->
+    <header class="flex h-16 items-center justify-between gap-4 border-b border-gray-200 bg-white px-4 sm:px-6">
+      <h1 class="text-lg font-semibold">Dashboard</h1>
+      <div class="flex items-center gap-3">
+        <label for="search" class="sr-only">Search</label>
+        <input id="search" type="search" placeholder="Search..."
+          class="hidden w-48 rounded-lg border border-gray-300 px-3 py-1.5 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500 sm:block md:w-64" />
+        <div class="flex h-9 w-9 items-center justify-center rounded-full bg-brand-600 text-sm font-medium text-white" aria-label="User avatar">
+          JD
+        </div>
+      </div>
+    </header>
+
+    <!-- Page content goes here -->
+    <main class="p-4 sm:p-6">
+
+  <!-- Stat cards -->
+  <section aria-label="Key statistics" class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+
+    <div class="card">
+      <p class="text-sm text-gray-500">Total Users</p>
+      <p class="mt-1 text-2xl font-bold">12,480</p>
+      <p class="mt-1 text-sm text-green-600">▲ 8.2% this month</p>
+    </div>
+
+    <div class="card">
+      <p class="text-sm text-gray-500">Revenue</p>
+      <p class="mt-1 text-2xl font-bold">$48,250</p>
+      <p class="mt-1 text-sm text-green-600">▲ 12.5% this month</p>
+    </div>
+
+    <div class="card">
+      <p class="text-sm text-gray-500">Orders</p>
+      <p class="mt-1 text-2xl font-bold">1,932</p>
+      <p class="mt-1 text-sm text-red-600">▼ 2.1% this month</p>
+    </div>
+
+    <div class="card">
+      <p class="text-sm text-gray-500">Growth</p>
+      <p class="mt-1 text-2xl font-bold">+18%</p>
+      <p class="mt-1 text-sm text-green-600">▲ 3.4% this month</p>
+    </div>
+
+  </section>
+
+</main>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
