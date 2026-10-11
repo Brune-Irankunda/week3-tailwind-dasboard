@@ -144,6 +144,102 @@
     </table>
   </div>
 </section>
+<!-- Two panels -->
+<div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
+
+  <!-- Recent activity -->
+  <section class="card" aria-labelledby="activity-title">
+    <h2 id="activity-title" class="mb-4 font-semibold">Recent Activity</h2>
+    <ul class="space-y-4 text-sm">
+      <li class="flex items-start gap-3">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-green-500"></span>
+        <div>
+          <p>Alice Uwase completed a payment</p>
+          <p class="text-xs text-gray-500">5 minutes ago</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-3">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-brand-500"></span>
+        <div>
+          <p>New user Eric Mugisha registered</p>
+          <p class="text-xs text-gray-500">1 hour ago</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-3">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-red-500"></span>
+        <div>
+          <p>Payment #1003 failed</p>
+          <p class="text-xs text-gray-500">3 hours ago</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-3">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-yellow-500"></span>
+        <div>
+          <p>Order #1005 is awaiting approval</p>
+          <p class="text-xs text-gray-500">Yesterday</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Top products with progress bars -->
+  <section class="card" aria-labelledby="products-title">
+    <h2 id="products-title" class="mb-4 font-semibold">Top Products</h2>
+    <div class="space-y-5 text-sm">
+      <div>
+        <div class="mb-1 flex justify-between">
+          <span>Product A</span><span class="text-gray-500">85%</span>
+        </div>
+        <div class="h-2 rounded-full bg-gray-100">
+          <div class="h-2 w-[85%] rounded-full bg-brand-600" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Product A"></div>
+        </div>
+      </div>
+      <div>
+        <div class="mb-1 flex justify-between">
+          <span>Product B</span><span class="text-gray-500">64%</span>
+        </div>
+        <div class="h-2 rounded-full bg-gray-100">
+          <div class="h-2 w-[64%] rounded-full bg-brand-600" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100" aria-label="Product B"></div>
+        </div>
+      </div>
+      <div>
+        <div class="mb-1 flex justify-between">
+          <span>Product C</span><span class="text-gray-500">42%</span>
+        </div>
+        <div class="h-2 rounded-full bg-gray-100">
+          <div class="h-2 w-[42%] rounded-full bg-brand-600" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100" aria-label="Product C"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Add new user form -->
+<section class="card mt-6" aria-labelledby="form-title">
+  <h2 id="form-title" class="mb-4 font-semibold">Add New User</h2>
+  <form class="grid grid-cols-1 gap-4 md:grid-cols-2">
+    <div>
+      <label for="name" class="mb-1 block text-sm font-medium">Full name</label>
+      <input id="name" type="text" placeholder="Jane Doe" class="input" />
+    </div>
+    <div>
+      <label for="email" class="mb-1 block text-sm font-medium">Email</label>
+      <input id="email" type="email" placeholder="jane@example.com" class="input" />
+    </div>
+    <div class="md:col-span-2">
+      <label for="role" class="mb-1 block text-sm font-medium">Role</label>
+      <select id="role" class="input">
+        <option>Admin</option>
+        <option>Editor</option>
+        <option>Viewer</option>
+      </select>
+    </div>
+    <div class="flex justify-end gap-3 md:col-span-2">
+      <button type="button" class="btn-secondary">Cancel</button>
+      <button type="button" class="btn-primary">Add user</button>
+    </div>
+  </form>
+</section>
 </main>
   </div>
 
