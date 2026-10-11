@@ -79,7 +79,71 @@
     </div>
 
   </section>
+<!-- Data table -->
+<section class="card mt-6 p-0" aria-labelledby="orders-title">
+  <div class="flex items-center justify-between px-5 py-4">
+    <h2 id="orders-title" class="font-semibold">Recent Orders</h2>
+    <a href="#" class="text-sm font-medium text-brand-600 transition hover:text-brand-700">View all</a>
+  </div>
 
+  <div class="overflow-x-auto">
+    <table class="w-full min-w-[640px] text-left text-sm">
+      <thead class="border-y border-gray-200 bg-gray-50 text-xs uppercase text-gray-500">
+        <tr>
+          <th scope="col" class="px-5 py-3">Order ID</th>
+          <th scope="col" class="px-5 py-3">Customer</th>
+          <th scope="col" class="px-5 py-3">Date</th>
+          <th scope="col" class="px-5 py-3">Amount</th>
+          <th scope="col" class="px-5 py-3">Status</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-100">
+        <tr class="transition hover:bg-gray-50">
+          <td class="px-5 py-3 font-medium">#1001</td>
+          <td class="px-5 py-3">Alice Uwase</td>
+          <td class="px-5 py-3">Oct 1, 2026</td>
+          <td class="px-5 py-3">$120.00</td>
+          <td class="px-5 py-3"><span class="badge bg-green-100 text-green-700">Paid</span></td>
+        </tr>
+        <tr class="transition hover:bg-gray-50">
+          <td class="px-5 py-3 font-medium">#1002</td>
+          <td class="px-5 py-3">Eric Mugisha</td>
+          <td class="px-5 py-3">Oct 2, 2026</td>
+          <td class="px-5 py-3">$85.50</td>
+          <td class="px-5 py-3"><span class="badge bg-yellow-100 text-yellow-700">Pending</span></td>
+        </tr>
+        <tr class="transition hover:bg-gray-50">
+          <td class="px-5 py-3 font-medium">#1003</td>
+          <td class="px-5 py-3">Grace Ineza</td>
+          <td class="px-5 py-3">Oct 3, 2026</td>
+          <td class="px-5 py-3">$240.00</td>
+          <td class="px-5 py-3"><span class="badge bg-red-100 text-red-700">Failed</span></td>
+        </tr>
+        <tr class="transition hover:bg-gray-50">
+          <td class="px-5 py-3 font-medium">#1004</td>
+          <td class="px-5 py-3">Jean Habimana</td>
+          <td class="px-5 py-3">Oct 4, 2026</td>
+          <td class="px-5 py-3">$60.00</td>
+          <td class="px-5 py-3"><span class="badge bg-green-100 text-green-700">Paid</span></td>
+        </tr>
+        <tr class="transition hover:bg-gray-50">
+          <td class="px-5 py-3 font-medium">#1005</td>
+          <td class="px-5 py-3">Diane Kamali</td>
+          <td class="px-5 py-3">Oct 5, 2026</td>
+          <td class="px-5 py-3">$310.75</td>
+          <td class="px-5 py-3"><span class="badge bg-yellow-100 text-yellow-700">Pending</span></td>
+        </tr>
+        <tr class="transition hover:bg-gray-50">
+          <td class="px-5 py-3 font-medium">#1006</td>
+          <td class="px-5 py-3">Patrick Nshuti</td>
+          <td class="px-5 py-3">Oct 6, 2026</td>
+          <td class="px-5 py-3">$45.00</td>
+          <td class="px-5 py-3"><span class="badge bg-green-100 text-green-700">Paid</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 </main>
   </div>
 
